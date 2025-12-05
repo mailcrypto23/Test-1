@@ -1,0 +1,56 @@
+{
+  "market": {
+    "openInterest": 1245,
+    "activeMarkets": "3.4K",
+    "sentiment": "58%"
+  },
+  "activity": [
+    {
+      "time": "09",
+      "value": 420
+    },
+    {
+      "time": "11",
+      "value": 800
+    },
+    {
+      "time": "13",
+      "value": 600
+    },
+    {
+      "time": "15",
+      "value": 1200
+    }
+  ],
+  "portfolio": {
+    "total": "$34,010",
+    "coins": [
+      {
+        "symbol": "BTC",
+        "value": "$20,788"
+      },
+      {
+        "symbol": "ETH",
+        "value": "$21,543"
+      }
+    ]
+  },
+  "livePrices": [
+    {
+      "symbol": "BNB",
+      "price": "$18,788"
+    },
+    {
+      "symbol": "LTC",
+      "price": "$11,657"
+    },
+    {
+      "symbol": "ETH",
+      "price": "$21,543"
+    },
+    {
+      "symbol": "BTC",
+      "price": "$20,788"
+    }
+  ]
+}
