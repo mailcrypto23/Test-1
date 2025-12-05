@@ -1,0 +1,34 @@
+:root{
+  --bg:#0b0f13;
+  --panel:#0f1720;
+  --muted:#9aa4ad;
+  --accent:#22d3ee;
+  --glass: rgba(255,255,255,0.03);
+}
+body{ margin:0; font-family: Inter, system-ui, Arial; background:var(--bg); color:#e6eef6; }
+.app-root .toolbar{ position:fixed; right:12px; top:12px; background:var(--panel); padding:8px; border-radius:6px }
+.header{padding:20px 24px; font-size:18px; font-weight:600; background:linear-gradient(120deg, rgba(255,255,255,0.02), transparent); box-shadow: 0 6px 18px rgba(2,6,23,0.6);}
+.layout .grid{ display:grid; grid-template-columns: 1fr 520px 300px; gap:18px; padding:22px }
+.card, .panel{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2)); border-radius:12px; padding:18px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.02), 0 6px 30px rgba(2,6,23,0.6); margin-bottom:16px }
+.col-left{ display:flex; flex-direction:column; gap:16px }
+.col-mid{ display:flex; flex-direction:column; gap:16px }
+.col-right{ display:flex; flex-direction:column; gap:16px }
+.ts-graph{ display:flex; align-items:end; gap:4px; height:80px; margin:8px 0 }
+.ts-graph .bar{ width:10px; background:linear-gradient(180deg,var(--accent), #4ade80); border-radius:3px }
+.price-big{ font-size:22px; margin-top:8px }
+.orderbook{ display:flex; justify-content:space-between; gap:12px }
+.grid .card h3, .panel h4{ margin:0 0 8px 0; font-size:14px; color:var(--muted) }
+.layout .card ul{ margin:0; padding-left:16px }
+.dashboard .overview{ padding:18px }
+.metrics{ display:flex; gap:12px }
+.metric{ background:var(--glass); padding:14px; border-radius:10px; min-width:120px; text-align:center }
+.main-area{ display:flex; gap:18px; padding:18px }
+.sidebar{ width:260px; display:flex; flex-direction:column; gap:12px }
+.lp{ padding:6px 0; border-bottom:1px dashed rgba(255,255,255,0.02); color:var(--muted) }
+input{ width:100%; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.03); background:transparent; color:inherit }
+
+@media(max-width:1000px){
+  .layout .grid{ grid-template-columns: 1fr; }
+  .main-area{ flex-direction:column }
+  .sidebar{ width:100% }
+}
