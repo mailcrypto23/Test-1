@@ -1,0 +1,1 @@
+import React from 'react';export default function LivePrices({data}){return (<div className='panel'><h4 className='card-title'>Live Prices</h4><div style={{display:'grid',gap:8}}>{data.map((p,i)=>(<div key={i} style={{display:'flex',justifyContent:'space-between'}}><div>{p.symbol}</div><div>{p.price}</div></div>))}</div></div>)}

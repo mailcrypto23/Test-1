@@ -1,0 +1,1 @@
+import React from 'react';export default function ChatAI(){return (<div className='panel'><h4 className='card-title'>Chat AI</h4><div className='muted'>Ask me about markets...</div><div style={{marginTop:12}}><input style={{width:'100%',padding:10,borderRadius:8,border:'1px solid rgba(0,0,0,0.06)'}} placeholder='Ask the AI...' /></div></div>)}
